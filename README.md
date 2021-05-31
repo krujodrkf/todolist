@@ -6,13 +6,15 @@ OpenSSL PHP Extension, PDO PHP Extension, Mbstring PHP Extension, Tokenizer PHP 
 Composer >=2.0
 MariaDB 10.4.19
 
-
-
+Now you have to create a database in MariaDB called 'todoapp'
+Change filename .env.example to .env and write 'DB_DATABASE=todoapp'
 
 Once you have those installed and MariaDB running you've got to do:
 
 git clone https://github.com/krujodrkf/todolist
+sudo chown user:user -R (replace with YOUR user)
 cd todolist
+chmod 755 storage -R
 composer install
 php artisan migrate
 php artisan serve
