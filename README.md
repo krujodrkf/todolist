@@ -17,6 +17,7 @@ cd todolist
 chmod 755 storage -R
 composer install
 php artisan migrate
+php artisan key:generate
 php artisan serve
 
 Finally you have be able to run the app by writing in your browser the url given by artisan.
