@@ -11,13 +11,7 @@ Change filename .env.example to .env and write 'DB_DATABASE=todoapp'
 
 Once you have those installed and MariaDB running you've got to do:
 
-git clone https://github.com/krujodrkf/todolist
-sudo chown user:user -R (replace with YOUR user)
-cd todolist
-chmod 755 storage -R
-composer install
-php artisan migrate
-php artisan key:generate
-php artisan serve
+How to run it in "one command":
+git clone https://github.com/krujodrkf/todolist && sudo chown user:user -R (replace with YOUR user) && cd todolist && chmod 755 storage -R && composer install && php artisan migrate && php artisan key:generate && php artisan serve
 
 Finally you have be able to run the app by writing in your browser the url given by artisan.
